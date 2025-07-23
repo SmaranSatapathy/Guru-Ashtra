@@ -102,10 +102,4 @@ Developed by **Smaran Satapathy**
 
 ---
 
-## ⭐ **Support**
-
-If you found this project helpful, **give it a ⭐ star** to show your support and keep the motivation going!
-
----
-
 > *Guru Ashtra – Teaching made digital, efficient, and delightful.* 🌐
