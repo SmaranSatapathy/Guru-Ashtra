@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background-color:#000000;
+    /* background-color:#10375C; */
+    /* color:#F4F6FF; */
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 41, 187);
+    font-weight: bolder;
+}
+
+.navbar{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: #F3C623;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+.navbar ul li button.login_btn{
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    background-color:#2A1458;
+    color:#FFDAE8;
+    /* background-color:#A4DD00; */
+    border-radius: 7px;
+    border: none;
+}
+
+p.greeting{
+    text-align: center;
+    font-size: larger;
+    gap: 20px;
+    font-family: "Norican", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    color: black;
+}
+
+p.name{
+    display: inline-flex;
+    font-family: "Norican", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    color: black;
+}
+
+/* CARDS */
+.cards{
+    width: 60%;
+    padding: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    position: relative;
+    left: 20%;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    color: #EEF694;
+    background-color: #169676;
+    /* background-color: #006769; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: xx-large;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px #7A1CAC;
+}
+
+/* My CLass */
+table{
+    width: 100%;
+}
+
+tr,td,th{
+    text-align: center;
+    font-size: large;
+}
+
+th{
+    background-color: #03C988;
+    /* background-color: #3B1C32; */
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #799EFF;
+    /* background-color: #eae1cd; */
+}
+
+tr:nth-child(odd){
+    background-color: #FF6363;
+    /* background-color: #eae1cd; */
+}
+
+/* Add students section */
+.add_students_section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+form.addStudentsForm{
+    width: 80%;
+    /* border: 1px solid red; */
+    background-color: #36BA98;
+    box-shadow: 2px 2px 10px #FF7EE2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+    position: relative;
+    left: 25vw;
+}
+
+form.addStudentsForm input{
+    padding: 7px;
+    font-size: medium;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+form.addStudentsForm button.addBtn{
+    width: 70px;
+    height: 30px;
+    /* padding: 8px; */
+    text-align: center;
+    cursor: pointer;
+    background-color: #FF9D3D;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+/* LOGIN FORM */
+.login_section{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    padding: 10px;
+    min-height: 50vh;
+}
+.login_section .login_form{
+    /* border:1px solid blue; */
+    /* width: fit-content; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    gap:10px;
+    padding: 10px;
+    font-size: large;
+    background-color: #D2FF72;
+    box-shadow: 2px 2px 10px #15B392;
+    border-radius: 10px;
+    /* position:relative;
+    top:20vh; */
+}
+
+.login_form label{
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.login_form button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3DC4D0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.login_form input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+/* Register Section */
+.register_section{
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.register_section .register_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 40vw;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #EBD3F8;
+    box-shadow: 3px 3px 20px #2E073F;
+    color: #2E073F;
+}
+
+.register_section .register_form input{
+    width: 100%;
+    padding: 7px;
+    font-size: large;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+}
+
+.register_section .register_form button.signUp_btn{
+    padding: 5px;
+    font-size: large;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #EA2F14;
+    color: #FCEF91;
+}
+
+.about_section{
+    padding:20px;
+    display: grid;
+    gap: 15px;
+    color: white;
+}
+
+.about_section p{
+    font-size: medium;
+}
+
+.about_section ul li{
+    list-style: none;
+}
+
+.about_section p.ending{
+    text-align: center;
+}
+
+/* Marks Section */
+.add_marks_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.add_marks_section form.marks_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 50%;
+    gap: 15px;
+    /* border: 1px solid red; */
+    background-color: #9ECAD6;
+    box-shadow: 3px 3px 10px #748DAE;
+    padding: 15px;
+}
+
+.add_marks_section input{
+    width: 100%;
+    padding: 7px;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom:3px solid black;
+    background-color: transparent;
+}
+
+.add_marks_section button.addBtn{
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #AF3E3E;
+    color: #EAEBD0;
+    /* background-color: #36BA98; */
+    cursor: pointer;
+}
+
+table.events{
+    width: 100%;
+}
+
+table.events th{
+    background-color: #FAD59A;
+}
+
+table.events tr:nth-child(even){
+    background-color: #D96F32;
+}
+
+table.events tr:nth-child(odd){
+    background-color: #F8B529;
+}
+
+table.events ul li{
+    list-style: none;
+}
+
+/* PAGE section */
+.page{
+    display: flex;
+    flex-direction: row;
+}
+
+.page .left{
+    width: 50%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page .left img{
+    width: 300px;
+    height: 450px;
+}
+
+.page .right{
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    color:#FFEB00;
+}
+
+.page .right a{
+    color:#16FF00;
+}
+
+.page .right p{
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
