@@ -13,17 +13,18 @@ CREATE TABLE REGISTER(
 -- );
 
 CREATE TABLE STUDENTS_DETAILS(
-    roll_no numeric(3) PRIMARY KEY,
+    roll_no numeric(10) PRIMARY KEY,
     name varchar(255) NOT NULL,
     father_name varchar(255) NOT NULL,
     mother_name varchar(255) NOT NULL,
     email varchar(50) not null,
     phone numeric(10),
-    dob date not null
+    dob date not null,
+    t_code varchar(5)
 );
 
 CREATE TABLE STUDENTS_MARKS(
-    roll_no numeric(3) references STUDENTS_DETAILS(roll_no),
+    roll_no numeric(10) references STUDENTS_DETAILS(roll_no),
     English numeric(3) not null,
     Maths numeric(3) not null,
     Odia numeric(3) not null,
